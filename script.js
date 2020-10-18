@@ -13,10 +13,7 @@ var cnt = 0;
                 var tx = x + dx[i];
                 var ty = y + dy[i];
                 if(tx < 1 || tx > 3 || ty < 1 || ty > 3)continue;//判断是否越界
-
-                //这是调试的代码不用管
-                // var btn = document.getElementById(""+tx+ty);
-                
+                var btn = document.getElementById(""+tx+ty);
                 //判断颜色并更改，cnt用于记录更改后的颜色的数量
                 if(btn.style.backgroundColor == color_Before)
                 {
